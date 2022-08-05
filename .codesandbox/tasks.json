@@ -1,0 +1,8 @@
+{
+  "tasks": {
+    "install": {
+      "name": "Install Packages",
+      "command": "npm install"
+    }
+  }
+}
