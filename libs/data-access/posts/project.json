@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/data-access/posts/src",
+  "prefix": "nx-template",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/data-access/posts"],
+      "options": {
+        "project": "libs/data-access/posts/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/data-access/posts/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/data-access/posts/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/data-access/posts"],
+      "options": {
+        "jestConfig": "libs/data-access/posts/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/data-access/posts/**/*.ts",
+          "libs/data-access/posts/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

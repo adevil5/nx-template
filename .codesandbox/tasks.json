@@ -1,8 +1,24 @@
 {
   "tasks": {
-    "install": {
-      "name": "Install Packages",
+    "npm_install": {
+      "name": "npm install",
       "command": "npm install"
+    },
+    "nx_migrate_latest": {
+      "name": "nx migrate latest",
+      "command": "npx nx migrate latest"
+    },
+    "nx_migrate_--run-migrations=migrations.json": {
+      "name": "nx migrate --run-migrations=migrations.json",
+      "command": "npx nx migrate --run-migrations=migrations.json"
+    },
+    "rm_-rf_./node_modules": {
+      "name": "rm -rf ./node_modules",
+      "command": "rm -rf ./node_modules"
+    },
+    "nx_run_my-angular-app:serve:development": {
+      "name": "nx run my-angular-app:serve:development",
+      "command": "npx nx run my-angular-app:serve:development"
     }
   }
 }

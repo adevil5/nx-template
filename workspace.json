@@ -1,5 +1,9 @@
 {
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
-  "projects": {}
+  "projects": {
+    "data-access-posts": "libs/data-access/posts",
+    "my-angular-app": "apps/my-angular-app",
+    "my-angular-app-e2e": "apps/my-angular-app-e2e"
+  }
 }
